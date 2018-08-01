@@ -29,6 +29,18 @@ public class LoopPractice
         System.out.println("Start Third For Loop");
         forByTens();
         System.out.println("End Third For Loop");
+        System.out.println("Start While Sequence");
+        whileSequence();
+        System.out.println("End While Sequence");
+        System.out.println("Start Do While Sequence");
+        doWhileSequence();
+        System.out.println("End Do While Sequence");
+        System.out.println("Start For Sequence");
+        forSequence();
+        System.out.println("End For Sequence");
+        System.out.println("Start One to Number");
+        printOneToNumber(50);
+        System.out.println("End One to Number");
 
     }
 
@@ -119,5 +131,44 @@ public class LoopPractice
             j += 10;
         } while (j <= 100);
 
+    }
+
+    public static void forSequence()
+    {
+        for (int k = 100; k > -101; k -= 8)
+        {
+            System.out.println(k);
+        }
+
+    }
+
+    public static void whileSequence()
+    {
+        int i = 108;
+        while (i > -100)
+        {
+            i -= 8;
+            System.out.println(i);
+        }
+    }
+
+    public static void doWhileSequence()
+    {
+        int j = 100;
+        do
+        {
+            System.out.println(j);
+            j -= 8;
+        } while (j > -101);
+    }
+
+    public static void printOneToNumber(int a)
+    {
+        a = 0;
+        while (a < 50)
+        {
+            a++;
+            System.out.println(a);
+        }
     }
 }
