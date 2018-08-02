@@ -4,8 +4,9 @@ public class ZeroDestiny
 {
     public static void main(String[] args)
     {
-        int nonZeroTimes = youMustEnterZero();
-        System.out.println("You entered a number other than zero " + nonZeroTimes + " times");
+        int nonZeroCount = youMustEnterZero();
+        System.out.println("You entered a number other than zero " + nonZeroCount + " times.");
+
     }
 
     public static int youMustEnterZero()
@@ -13,7 +14,7 @@ public class ZeroDestiny
         Scanner in = new Scanner(System.in);
 
         int numberEntered;
-        int nonZeroCount = 0;
+        int count = 0;
 
         do
         {
@@ -22,12 +23,12 @@ public class ZeroDestiny
 
             if (numberEntered != 0)
             {
-                nonZeroCount++;
-                System.out.println("You entered a number other than 0");
+                count++;
             }
         } while (numberEntered != 0);
 
-        return nonZeroCount;
+
+        return count;
     }
 }
 
